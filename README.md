@@ -2,6 +2,9 @@
 
 A page template built with Baklib CMS and tailwindcss using tailus blocks.
 
+![Tailus astro based theme](./assets/images/theme/index.png)
+![Tailus astro based dark theme](./assets/images/theme/index-dark.png)
+
 ## 🚀 Project Structure
 
 ```
