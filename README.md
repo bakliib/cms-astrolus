@@ -1,28 +1,45 @@
-# release Astrolus 模板
+#  Astrolus 模板
 
-## 介绍
+A page template built with Baklib CMS and tailwindcss using tailus blocks.
 
-Release Astrolus 模板用于小型CMS内容管理系统，用于构建如产品更新、公告发布、新闻、博客、日志、常见问题等。
+## 🚀 Project Structure
 
-模板信息：
+```
+  .
+  ├── README.md
+  ├── config
+  │   └── settings_schema.json
+  ├── layout
+  │   └── theme.liquid
+  ├── package-lock.json
+  ├── package.json
+  ├── snippets
+  │   ├── _breadcrumb.liquid
+  │   ├── _feedback_form.liquid
+  │   ├── _footer.liquid
+  │   └── _header.liquid
+  ├── tailwind.config.js
+  ├── templates
+  │   ├── index.liquid
+  │   ├── page.liquid
+  │   ├── search.liquid
+  │   └── tag.liquid
+```
 
-- theme_name: Astrolus
-- theme_scope: cms
-- theme_author: Baklib
-- theme_documentation_url: https://help.baklib.cn/themes/release-Astrolus
-- theme_support_url: https://help.baklib.cn/themes/release-Astrolus/settings
-- Demo演示： https://demo-release-Astrolus.uibak.com/
 
-模板特点：
+## 🧞 Commands
 
-- 首页Card图文列表主题
-- 首页List文本列表主题
-- 有侧边栏标签分类
-- 用户反馈表单
-- 支持嵌入第三方网站、APP等
+All commands are run from the root of the project, from a terminal:
 
+| Command                | Action                                             |
+| :--------------------- | :------------------------------------------------- |
+| `npm install`          | Installs dependencies                              |
+| `npm run dev`          | Starts local dev server at `localhost:3000`        |
+| `npm run build`        | Build your production site to `./dist/`            |
+| `npm run preview`      | Preview your build locally, before deploying       |
+| `npm run astro ...`    | Run CLI commands like `astro add`, `astro preview` |
+| `npm run astro --help` | Get help using the Astro CLI                       |
 
-## 截图预览
+## 👀 Want to learn more?
 
-![index](https://tanmer.baklib.com/-/dam/assets/organization_pry3c5--main-version/eyJfcmFpbHMiOnsiZGF0YSI6eyJpZCI6MTc5ODEsInBhdGgiOiJyZWxlYXNlIGd1aWRlIGRlbW8ucG5nIiwidGltZXN0YW1wIjoiMjAyNC0wOS0yMiAyMzo0NDoxNCArMDgwMCJ9LCJwdXIiOiJvcmdhbml6YXRpb25fcHJ5M2M1LS1tYWluLXZlcnNpb24ifX0--b9e8ab073536b4655fc8c20d1f6b3dfefd55217c436a8ae53c3a04d493d471f3/release%20Astrolus%20demo.png)
-
+https://help.baklib.cn/themes/astrolus

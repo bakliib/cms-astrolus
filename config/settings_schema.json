@@ -92,6 +92,12 @@
         "type": "text",
         "label": "t:settings_schema.generic.settings.copyright_info.label",
         "placeholder": "t:settings_schema.generic.settings.copyright_info.placeholder"
+      },
+      {
+        "id": "is_allow_feedback",
+        "type": "checkbox",
+        "label": "t:settings_schema.generic.settings.is_allow_feedback.label",
+        "default": true
       }
     ]
   },
