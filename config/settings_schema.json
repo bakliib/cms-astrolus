@@ -1,18 +1,18 @@
 [
   {
     "name": "theme_info",
-    "theme_name": "guide",
+    "theme_name": "astrolus",
     "theme_label": "t:theme_label",
     "theme_description": "t:theme_description",
-    "theme_version": "1.1.2",
+    "theme_version": "1.0.0",
     "theme_scope": "cms",
     "theme_author": "Baklib",
-    "theme_documentation_url": "https://help.baklib.cn/themes/release-guide",
-    "theme_support_url": "https://help.baklib.cn/themes/release-guide/settings",
+    "theme_documentation_url": "https://help.baklib.cn/themes/astrolus",
+    "theme_support_url": "https://help.baklib.cn/themes/astrolus/settings",
     "theme_thumb_url": "images/theme/thumb.png",
     "theme_preview_images": [
-      "images/theme/release-guide.png",
-      "images/theme/index-list.png",
+      "images/theme/index.png",
+      "images/theme/index-dark.png",
       "images/theme/page.png"
     ],
     "theme_languages": [
@@ -52,17 +52,17 @@
       },
       "initial_pages": {
         "default": {
-          "name": "产品指南",
+          "name": "Website",
           "default": true,
           "pages": [
             {
-              "name": "开始使用",
-              "slug": "get-start",
+              "name": "Blog",
+              "slug": "blog",
               "template": "page"
             },
             {
-              "name": "操作教程",
-              "slug": "guide",
+              "name": "Testimonials",
+              "slug": "testimonials",
               "template": "page"
             }
           ]
@@ -85,59 +85,13 @@
         "id": "slogan",
         "type": "text",
         "label": "t:settings_schema.generic.settings.slogan.label",
-        "default": "👋 What Can We Help?"
+        "default": "Shaping a world with reimagination."
       },
       {
         "id": "copyright_info",
         "type": "text",
         "label": "t:settings_schema.generic.settings.copyright_info.label",
         "placeholder": "t:settings_schema.generic.settings.copyright_info.placeholder"
-      },
-      {
-        "id": "sort_rule",
-        "type": "select",
-        "label": "首页页面列表展示规则",
-        "choices": [{"label":"按创建日期-倒序","value":"-created_at"},{"label":"按创建日期-正序","value":"created_at"},{"label":"按更新日期-倒序","value":"-edited_at"},{"label":"按更新日期-倒序","value":"edited_at"},{"label":"按访问量（从多到少）","value":"-visit_count"},{"label":"按访问量（从少到多）","value":"visit_count"},{"label":"手动排序","value":""}],
-        "default": "-created_at"
-      },
-      {
-        "id": "is_allow_feedback",
-        "type": "checkbox",
-        "label": "t:settings_schema.generic.settings.is_allow_feedback.label",
-        "default": true
-      },
-      {
-        "id": "is_allow_header",
-        "type": "checkbox",
-        "label": "t:settings_schema.generic.settings.is_allow_header.label",
-        "default": true
-      },
-      {
-        "id": "is_allow_footer",
-        "type": "checkbox",
-        "label": "t:settings_schema.generic.settings.is_allow_footer.label",
-        "default": true
-      }
-    ]
-  },
-  {
-    "name": "t:settings_schema.nav.nav_title",
-    "settings": [
-      {
-        "id": "header_menu_html",
-        "type": "html",
-        "label": "t:settings_schema.nav.settings.header_menu_html.label",
-        "info": "t:settings_schema.nav.settings.header_menu_html.info",
-        "rows": 10,
-        "placeholder": "<a href='#'> title </a>"
-      },
-      {
-        "id": "footer_menu_html",
-        "type": "html",
-        "label": "t:settings_schema.nav.settings.footer_menu_html.label",
-        "info": "t:settings_schema.nav.settings.footer_menu_html.info",
-        "rows": 10,
-        "placeholder": "<a href='#'> title </a>"
       }
     ]
   },

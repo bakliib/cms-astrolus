@@ -22,7 +22,7 @@ Trace:
 
 npm manifest:
   {
-    "name": "guide",
+    "name": "Astrolus",
     "version": "1.1.1",
     "license": "MIT",
     "scripts": {

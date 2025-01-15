@@ -15,18 +15,11 @@
     {% if false %} {{ 'javascripts/cdn.tailwindcss.js' | asset_url | script_tag: data-turbo-track: 'reload' }} {% endif %}
     {{ site.settings.head_html }}
   </head>
-  <body data-controller="scroll-animation" class="antialiased bg-white text-slate-600">
-
-    {% if site.settings.is_allow_header %}
-      {% render 'header' %}
-    {% endif %}
-
-    <main class="relative" data-scroll-animation-target="container">
+  <body data-controller="scroll-animation" class="bg-white dark:bg-gray-900">
+    {% render 'header' %}
+    <main class="space-y-40 mb-40">
       {{ content_for_layout }}
-      {% if site.settings.is_allow_footer %}
-        {% render 'footer' %}
-      {% endif %}
     </main>
-
+    {% render 'footer' %}
   </body>
 </html>
